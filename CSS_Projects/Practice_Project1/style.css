@@ -21,6 +21,7 @@ body {
 
 #left-top-left {
     padding: 40px;
+    grid-column: 1;
 }
 
 #square {
@@ -31,20 +32,18 @@ body {
 }
 
 #left-top-right {
-    /*  background-color: blueviolet;*/
     justify-self: right;
-    padding: 40px;
     text-align: right;
 }
 
 #left-top-right h4 {
-    margin-bottom: 50px;
-    font-size: 20px;
+    margin: 20px;
+    font-size: 15px;
     font-weight: 500;
 }
 
 #left-top-right h5 {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: #333;
 }
@@ -59,9 +58,9 @@ body {
 }
 
 #left-center h1 {
-    font-size: 7vw;
+    font-size: 6vw;
     text-transform: uppercase;
-    line-height: 6.5vw;
+    line-height: 5.5vw;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -83,9 +82,8 @@ body {
 }
 
 #right {
-    background-color: blueviolet;
     grid-column: 3;
-    grid-row: 1/4;
+    grid-row: 1 / 4;
     padding: 40px;
 }
 
@@ -115,65 +113,26 @@ body {
     font-weight: 100;
 }
 
-@media(max-width:600px) {
+@media (max-width: 600px) {
     #main {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 60px 34px 7%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    #left-top-left,
+    #left-top-right,
+    #left-center,
+    #left-bottom,
+    #right {
+        grid-column: 1;
+        width: 100%;
+        padding: 10px;
     }
     #right {
-        grid-column: 1/4;
-        grid-row: 4;
-        padding: 20px;
-        padding-right: 20px;
+        grid-row: auto;
+        padding: 10px;
     }
     #right video {
-        height: 42vh;
-    }
-    #left-top-left {
-        padding: 40px;
-    }
-    #square {
-        height: 20px;
-        width: 20px;
-    }
-    #left-top-right {
-        padding: 20px;
-        text-align: right;
-    }
-    #left-top-right h4 {
-        display: none;
-    }
-    #left-top-right h5 {
-        display: none;
-    }
-    #left-center {
-        padding: 10px 20px;
-    }
-    #left-center h1 {
-        font-size: 17vw;
-        line-height: 14vw;
-    }
-    #left-center h1:nth-child(2n) {
-        text-align: right;
-    }
-    #left-bottom {
-        padding: 5px 20px;
-    }
-    #left-bottom p {
-        width: 90%;
-        font-size: 20px;
-    }
-    #arrow {
-        top: 52%;
-        left: 50%;
-        padding: 10px;
-        transform: translate(-50%, -50%) rotate(90deg);
-    }
-    #arrow i {
-        font-size: 20px;
-    }
-    #left-top-right h6 {
-        display: initial;
-        font-size: 20px;
+        width: 100%;
+        height: auto;
     }
 }
