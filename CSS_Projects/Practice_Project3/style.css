@@ -1,0 +1,268 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+/* Apply overflow hidden to both html and body */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    /* Remove horizontal scrollbar */
+}
+
+
+/* Main Container */
+
+#main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 90px;
+    padding-top: 150px;
+    gap: 70px;
+}
+
+
+/* Left Section */
+
+#left {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+
+/* Large Heading */
+
+#left h1 {
+    font-size: 145px;
+    font-weight: 500;
+    line-height: 150px;
+}
+
+
+/* Details Section */
+
+#bottom-left {
+    margin-top: 40px;
+}
+
+
+/* Colors Section */
+
+#color {
+    border: 1px solid black;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#color h5 {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#color1 {
+    background-color: brown;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 3px;
+}
+
+#color2 {
+    background-color: burlywood;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+
+/* Details Title */
+
+#left h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* Details Description */
+
+#left p {
+    font-size: 20px;
+    width: 65%;
+    font-weight: 600;
+    color: #444;
+    line-height: 30px;
+}
+
+
+/* Right Section */
+
+#right {
+    height: 90%;
+    width: 33%;
+    position: relative;
+}
+
+
+/* Top Area with Price and Rating */
+
+#right-top {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+#right-top h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#right-top h5 {
+    font-size: 16px;
+}
+
+#right-top h5 i {
+    color: goldenrod;
+}
+
+
+/* Image Styling */
+
+#right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Add to Bag Circle Button */
+
+#black-gola {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    background-color: rgb(3, 3, 7);
+    color: #fff;
+    border-radius: 50%;
+    right: 0;
+    /* Adjusted to prevent overflow */
+    transform: translateX(50%);
+    /* Push it outward but avoid scrollbar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 24%;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+
+/* Rotated Text */
+
+#rotated {
+    position: absolute;
+    left: -13%;
+    bottom: 5%;
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
+/* ------------------ */
+
+
+/* Responsive for max-width 600px */
+
+
+/* ------------------ */
+
+@media (max-width: 600px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 30px;
+    }
+    #left {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    #left h1 {
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+    }
+    #bottom-left {
+        margin-top: 20px;
+        text-align: center;
+    }
+    #color h5 {
+        font-size: 16px;
+    }
+    #color1,
+    #color2 {
+        height: 18px;
+        width: 18px;
+    }
+    #left h2 {
+        font-size: 22px;
+    }
+    #left p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 auto;
+    }
+    #right {
+        width: 100%;
+        height: auto;
+    }
+    #right img {
+        height: auto;
+    }
+    #right-top {
+        padding-right: 10px;
+    }
+    #right-top h4 {
+        font-size: 22px;
+    }
+    #right-top h5 {
+        font-size: 14px;
+    }
+    #black-gola {
+        height: 120px;
+        width: 120px;
+        font-size: 20px;
+        right: 0;
+        transform: translateX(50%);
+        top: 20%;
+    }
+    #rotated {
+        display: none;
+    }
+}
