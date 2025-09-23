@@ -1,0 +1,79 @@
+<!--Create a form with input fields and a submit button .Use Javascript to validate the form and display an error message if the input is invalid-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h4 id="error"></h4>
+        <div id="form">
+            <form action="">
+                <!-- First Name -->
+                <label for="inp1">First Name: </label>
+
+                <input type="text" id="inp1" name="first-name" placeholder="Enter your first name">
+                <br><br>
+
+                <!-- Last Name -->
+                <label for="inp2">Last Name: </label>
+
+                <input type="text" id="inp2" name=" last-name " placeholder="Enter your last name ">
+                <br><br>
+
+                <!-- Contact -->
+                <label for="inp3">Contact: </label>
+
+                <input type="text " id="inp3" name="contact " placeholder="Enter your contact number ">
+                <br><br>
+
+                <!-- Email -->
+                <label for="inp4">Email: </label>
+
+                <input type="email" id="inp4" name="email " placeholder="Enter your email ">
+                <br><br>
+
+
+                <!-- Gender -->
+                <label>Gender: </label>
+                <div id="inp5">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+
+                </div>
+                <br><br>
+
+                <!-- Caste -->
+                <label for="inp6">Caste: </label>
+                <select id="inp6" name="caste ">
+        <option value=" ">--Select Caste--</option>
+        <option value="general ">General</option>
+        <option value="obc ">OBC</option>
+        <option value="sc ">SC</option>
+        <option value="st ">ST</option>
+        <option value="other ">Other</option>
+    </select>
+                <br><br>
+
+                <!-- Submit -->
+                <button type="submit ">Submit</button>
+            </form>
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js "></script>
+</body>
+
+</html>
