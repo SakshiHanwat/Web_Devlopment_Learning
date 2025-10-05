@@ -1,8 +1,8 @@
-var add = document.querySelector("#add");
-var remove = document.querySelector("#remove");
-var inp = document.querySelector("input");
-var ul = document.querySelector("ul");
-var li;
+let add = document.querySelector("#add");
+let remove = document.querySelector("#remove");
+let inp = document.querySelector("input");
+let ul = document.querySelector("ul");
+let li;
 
 add.addEventListener("click", function() {
     if (inp.value.trim() === '') {} else {

@@ -1,12 +1,12 @@
 /*var form = document.querySelector("form");
-var inps = document.querySelectorAll("inp1");
-var h4 = document.querySelector("h4");
+let inps = document.querySelectorAll("inp1");
+let h4 = document.querySelector("h4");
 
-var inp2 = document.querySelector("#inp2");
-var inp3 = document.querySelector("#inp3");
-var inp4 = document.querySelector("#inp4");
-var inp5 = document.querySelector("#inp5");
-var inp6 = document.querySelector("#inp6"); * /
+let inp2 = document.querySelector("#inp2");
+let inp3 = document.querySelector("#inp3");
+let inp4 = document.querySelector("#inp4");
+let inp5 = document.querySelector("#inp5");
+let inp6 = document.querySelector("#inp6"); * /
 
 
 
@@ -21,18 +21,18 @@ form.addEventListener("submit", function(ev) {
     }
 
 }) */
-var form = document.querySelector("form");
-var inps = document.querySelectorAll('input[type="text"], select');
-var radios = document.querySelectorAll('input[type="radio"]');
-var h4 = document.querySelector("h4");
+let form = document.querySelector("form");
+let inps = document.querySelectorAll('input[type="text"], select');
+let radios = document.querySelectorAll('input[type="radio"]');
+let h4 = document.querySelector("h4");
 
 form.addEventListener("submit", function(ev) {
     ev.preventDefault();
 
-    var isRadioChecked = Array.from(radios).some(radio => radio.checked);
-    var isEmpty = false;
+    let isRadioChecked = Array.from(radios).some(radio => radio.checked);
+    let isEmpty = false;
 
-    for (var i = 0; i < inps.length; i++) {
+    for (let i = 0; i < inps.length; i++) {
         if (inps[i].value.trim() === '') {
             isEmpty = true;
             break;
