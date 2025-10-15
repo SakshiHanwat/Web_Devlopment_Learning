@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.page1 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(187, 113, 17);
+}
+
+.page2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(79, 62, 39);
+}
+
+.page2 img {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page3 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(139, 189, 13);
+}
