@@ -72,12 +72,33 @@ function Cart() {
 }
 
 
-export default Cart; //and in next file we written where need import Cart from"./script"
+export default Cart; //and in next file we written where need import Cart from"./script2"
 //2nd way
 export function Cart() {}
 export function Abcd() {
 
 }
-//and in next file we written where need import {Cart,Abcd} from"./script"
+//and in next file we written where need import {Cart,Abcd} from"./script2"
 
 //map filter
+// mapfilter-- dono hi array pe chalte hain, aur dono ka kaam hain 
+// array par kuch perform krna hain andek naya array return krna hain
+
+let arr_no = [1, 2, 3, 4, 5];
+//map- har element par kuch karo and naye array mein rakho
+// map ke andr aata hain function and functionke andraata hain value
+
+const ans = arr.map(val => val * 2)
+
+//map ke andar return krne ke wajah se hi  elements naye array mein place hote hain
+
+//map filtermein ek hi farak hain,map saare bande lautata hain mtlb ki count kmnahi hoga,
+//  filter bando ko kam kr skta hain
+
+//jab original array ka size km naa hona ho wha map use hota hain 
+
+//jab original array ka size km krna ho to wha filter use hota hain
+
+//ek array mein se saare wo nums hta do jo ki 4 se chotte hain
+let arrfit = [1, 2, 3, 4, 5, 6];
+const ans1 = arrfit.filter(elem => elem > 4);
