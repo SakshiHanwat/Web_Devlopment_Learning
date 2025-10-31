@@ -1,0 +1,108 @@
+JSX ka full form hai:
+
+JavaScript XML
+
+Matlab:
+JavaScript ke andar HTML likhne ka tarika.
+Ye React ko batata hai ki UI (webpage) pe kya show karna hai.
+
+first component creation  
+
+what is component ??
+  React me component ek chhota part hota hai webpage ka,
+jo alag-alag bana hota hai aur reuse kiya ja sakta hai.
+
+Facebook me har chhota part (post, comment, like button, sidebar, navbar) ek React Component hai.
+Ye sab milke poora Facebook app banate hain.
+
+Concept	Meaning
+Component	Webpage ka chhota part
+Reusability	Ek hi component (jaise Post) baar-baar use hota hai
+Structure	Chhote components milke bada app banate hain
+
+Example 
+
+function Welcome() {
+  return <h1>Hello Sakshi!</h1>;
+}
+
+Welcome ek component hai (function type)
+
+Ye JSX return kar raha hai: <h1>Hello Sakshi!</h1>
+
+React is JSX ko HTML me convert karke browser me dikhata hai
+
+React me Component wo function hai
+jo JSX (HTML jaisa code) return karta hai
+jisse screen pe UI (user interface) banta hai.
+
+
+1️⃣ Functional Components (Modern & Recommended)
+2️⃣ Class Components (Old style, ab kam use hote hain)
+🧩 1️⃣ Functional Component
+
+Ye normal JavaScript function hota hai
+jo JSX return karta hai (HTML jaisa code).
+
+📘 Example:
+function Welcome() {
+  return <h1>Hello Sakshi!</h1>;
+}
+
+
+✅ Simple words me:
+
+Ye ek function hai.
+
+Return me HTML jaisa code (JSX) likha hai.
+
+Isi ko hum <Welcome /> likh kar use kar sakte hain.
+
+✨ Features:
+
+Likhneme simple
+
+Fast performance
+
+Reusable
+
+Hooks (like useState, useEffect) ka use kar sakte hain
+
+👉 Modern React me sab functional components hi use hote hain.
+
+🧩 2️⃣ Class Component (Old way)
+
+Pehle React me components class ke through likhe jaate the.
+
+📘 Example:
+import React, { Component } from 'react';
+
+class Welcome extends Component {
+  render() {
+    return <h1>Hello Sakshi!</h1>;
+  }
+}
+
+export default Welcome;
+
+
+✅ Simple words me:
+
+Ye ek class hai jo React.Component se inherit karti hai
+
+Iske andar render() function hota hai jo JSX return karta hai
+
+⚠️ Notes:
+
+Ye thoda complex hota hai
+
+Ab ye style rarely used hai
+
+Hooks aane ke baad functional components hi use hote hain
+
+
+
+src folder me -----ek component folder hota hain usme saare components
+ hote hain joh  app.js file ke andr aate hain jiske andr home page about like ....etc aur 
+ yeh app.js bhi ab main.js ke andr jaata hain main.js file responsible hoti hain apke website
+ ke body tag ke andr app.js ko daalne ke liye responsible hain 
