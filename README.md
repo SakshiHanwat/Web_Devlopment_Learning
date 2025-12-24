@@ -128,52 +128,44 @@ Web_Development_Learning/
 ## 🚀 How to Use This Repo
 
 1. Clone the repository
+   
    ```bash
    git clone https://github.com/SakshiHanwat/Web_Development_Learning.git
 
+---
 
-Open any folder
+## 🚀 How to Use This Repository
 
-Run index.html or project files
-
-Learn, edit, experiment ✨
+- Open any folder  
+- Run `index.html` or project files  
+- Learn, edit, experiment ✨  
 
 ---
 
 ## 🎯 Learning Status
 
-✅ CSS basics & mini projects
-
-✅ GSAP animations completed
-
-✅ JavaScript exercises ongoing
-
-✅ Tailwind projects started
-
-🚧 React learning in progress
+- ✅ CSS basics & mini projects  
+- ✅ GSAP animations completed  
+- ✅ JavaScript exercises ongoing  
+- ✅ Tailwind projects started  
+- 🚧 React learning in progress  
 
 ---
 
 ## 🚀 Future Additions
 
-Advanced JavaScript projects
-
-Full React applications
-
-Backend basics
-
-Real-world full stack projects
+- Advanced JavaScript projects  
+- Full React applications  
+- Backend basics  
+- Real-world full stack projects  
 
 ---
 
 ## 👩‍💻 Author
 
-Sakshi Hanwat
-Learning • Practicing • Building
+**Sakshi Hanwat**  
+Learning • Practicing • Building  
 
 ---
 
-✨ This repository represents my continuous growth as a developer.
-
-
----
+✨ *This repository represents my continuous growth as a developer.*
